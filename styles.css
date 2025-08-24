@@ -1,0 +1,84 @@
+/* Global */
+:root {
+    --bg: #0b1220;
+    --card: #111a2b;
+    --ink: #eaf1ff;
+    --muted: #9bb0d3;
+    --accent: linear-gradient(135deg, #6aa6ff 0%, #8f7bff 60%, #c86bff 100%);
+  }
+  html, body, .stApp {
+    background: var(--bg) !important;
+  }
+  h1, h2, h3, h4, h5, h6, p, .stMarkdown, .stText, .stCaption, .stInfo, .stSuccess {
+    color: var(--ink) !important;
+  }
+  
+  /* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    padding: 24px 18px 6px 18px;
+    align-items: center;
+    border-radius: 18px;
+    background: radial-gradient(1200px 600px at 0% 0%, rgba(141,124,255,0.14), transparent),
+                radial-gradient(800px 400px at 100% 0%, rgba(107,166,255,0.12), transparent);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .hero-left h1 {
+    font-size: 42px; margin: 6px 0 6px 0; letter-spacing: 0.4px;
+    background: var(--accent); -webkit-background-clip: text; color: transparent;
+    font-weight: 800;
+  }
+  .hero .subtitle { color: var(--muted); font-size: 16px; margin-top: 6px; }
+  .badge {
+    display: inline-block; font-size: 12px; letter-spacing: .4px;
+    padding: 6px 10px; border-radius: 999px; color: #0b1220; background: #a7c1ff;
+    font-weight: 700; text-transform: uppercase;
+  }
+  
+  /* Stats */
+  .hero-right { display: flex; gap: 12px; justify-content: flex-end; }
+  .stat-card {
+    min-width: 160px; padding: 14px 16px; border-radius: 14px; background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06); box-shadow: 0 6px 30px rgba(0,0,0,0.25) inset;
+  }
+  .stat-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+  .stat-value { color: var(--ink); font-size: 18px; font-weight: 700; margin-top: 2px; }
+  
+  /* Sections & Cards */
+  .section-title {
+    margin: 28px 0 10px 0; font-weight: 800; font-size: 18px; letter-spacing: .3px;
+    background: var(--accent); -webkit-background-clip: text; color: transparent;
+  }
+  .card {
+    padding: 18px; border-radius: 14px; background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  
+  /* Inputs */
+  .stFileUploader, .stTextArea, .stButton > button, .stSlider {
+    font-size: 15px !important;
+  }
+  .stButton > button {
+    border-radius: 12px !important;
+    background: var(--accent) !important; color: #0b1220 !important; border: none !important;
+    font-weight: 800 !important;
+  }
+  
+  /* Messages */
+  .stAlert, .stInfo, .stSuccess { border-radius: 12px !important; }
+
+  /* Compact primary buttons */
+.stButton > button {
+  padding: 8px 14px !important;
+  font-size: 14px !important;
+  border-radius: 10px !important;
+}
+
+/* Secondary download buttons consistent */
+.stDownloadButton > button {
+  padding: 8px 14px !important;
+  font-size: 14px !important;
+  border-radius: 10px !important;
+}
