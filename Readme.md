@@ -61,20 +61,11 @@ source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
 
-
 pip install -r requirements.txt
 
-
 touch .env
-
 
 OPENAI_API_KEY=your_openai_api_key_here
 RESUME_TEXT="Paste your resume text here"
 
 streamlit run app.py
-
-
-
-
-
-
