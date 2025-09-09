@@ -29,7 +29,7 @@ Upload a JD and a resume template, and the app will generate **missing skills, k
 ## 🛠️ Tech Stack
 
 - **Frontend**: [Streamlit](https://streamlit.io/)  
-- **LLM Backend**: [OpenAI GPT-4o-mini](https://platform.openai.com/)  
+- **LLM Backend**: [OpenAI GPT-4o-mini](https://platform.openai.com/)  Note: Only Supports OpenAI API key
 - **Document Processing**: PyPDF2, python-docx  
 - **Resume Generation**: docxtpl (Word template rendering)  
 - **Environment Management**: python-dotenv, Streamlit Secrets  
